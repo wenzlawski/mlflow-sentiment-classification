@@ -12,7 +12,9 @@ module load tools/env/proxy2
 
 export OMP_NUM_THREADS=$NSLOTS
 
-conda create -y -n mlflow python=3.8 -c conda-forge mlflow
+conda create -y -n mlflow python=3.8 
+
+conda install -y -c conda-forge mlflow
 
 source activate mlflow
 
