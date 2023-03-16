@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mlflow-sentiment-classification"
+version = "0.1.0"
+description = ""
+authors = ["Marc Wenzlawski <marc.wenzlawski@outlook.de>"]
+readme = "README.md"
+packages = [{include = "mlflow_sentiment_classification"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.27.1"
+torch = "1.11.0"
+mlflow = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
