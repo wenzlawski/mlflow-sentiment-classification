@@ -14,8 +14,8 @@ export OMP_NUM_THREADS=$NSLOTS
 
 conda create -y -n mlflow python=3.8 
 
-conda install -y -c conda-forge mlflow
-
 source activate mlflow
+
+conda install -y -c conda-forge mlflow
 
 mlflow run . -P accelerator=gpu
